@@ -1,0 +1,10 @@
+{
+  "extends": ["angular"],
+  "rules": {
+      "angular/module-setter":0,
+      "angular/module-sgetter":0,
+      "angular/no-service-method":0,
+      "angular/log":0
+    },
+    "parser": "babel-eslint"
+}

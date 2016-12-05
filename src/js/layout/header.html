@@ -7,8 +7,54 @@
     </a>
 
     <!-- Show this for logged out users -->
-    <ul class="nav navbar-nav pull-xs-right">
+    <ul class="nav navbar-nav pull-xs-right" show-authed="false">
 
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.home">
+          Home
+        </a>
+      </li>
+
+<!-- Gebruik maken van show-authed in de plaats
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.article">
+          Article
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.profile">
+          Profile
+        </a>
+      </li>
+-->
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.login">
+          Sign in
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.register">
+          Sign up
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Show this for logged in users -->
+    <ul show-authed="true" class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
         <a class="nav-link"
           ui-sref-active="active"
@@ -29,10 +75,9 @@
         <a class="nav-link"
           ui-sref-active="active"
           ui-sref="app.profile">
-          Profile
+          My Profile
         </a>
       </li>
-
     </ul>
 
 
